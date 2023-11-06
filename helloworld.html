@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title id="title"></title>
+</head>
+<body>
+    <script src="constantes.js"></script>
+    <script>
+        // Création de la fenêtre
+        var fenetre = document.createElement('div');
+        fenetre.style.width = '200px';
+        fenetre.style.height = '200px';
+        fenetre.style.backgroundColor = 'white';
+        fenetre.style.position = 'absolute';
+        fenetre.style.top = '50%';
+        fenetre.style.left = '50%';
+        fenetre.style.transform = 'translate(-50%, -50%)';
+        fenetre.style.border = '1px solid black';
+        document.body.appendChild(fenetre);
+
+        // Utilisation des constantes
+        document.getElementById('title').innerHTML = HELLO_WORLD_TITLE;
+
+        // Création du label de texte
+        var label = document.createElement('p');
+        label.style.textAlign = 'center';
+        label.style.color = 'yellow';
+        label.innerHTML = HELLO_WORLD_TEXT;
+        fenetre.appendChild(label);
+    </script>
+</body>
+</html>
